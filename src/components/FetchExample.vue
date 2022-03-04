@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import useFetch from '../hooks/useFetch';
 import { baseUrl } from '../../config/index'
-import { toRef } from 'vue';
 const banners = useFetch<any>(`${baseUrl}/banner?type=1`, {
-  method: 'GET'
+  method: 'GET',
 })
 console.log(banners)
 
