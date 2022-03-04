@@ -63,6 +63,7 @@ const useFetch = <T = unknown>(url?: string, options?: RequestInit) => {
     controller.abort();
   });
 
+  // 返回的必须是个Ref, ref具有响应式, ref.value并不是
   return state;
 };
 
